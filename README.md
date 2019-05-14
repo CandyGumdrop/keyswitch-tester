@@ -11,3 +11,7 @@ MicroUSB connector, or optionally instead via a 2 x 0.1" header connected to a
 Most of this board can easily be assembled by hand, except for the MicroUSB
 connector which is a bit more tricky, so if soldering this by hand, you may
 prefer to use the header pins instead.
+
+![Schematic](https://raw.githubusercontent.com/CandyGumdrop/keyswitch-tester/master/schematic.png)
+
+![PCB Drawing](https://raw.githubusercontent.com/CandyGumdrop/keyswitch-tester/master/pcb_drawing.png)
