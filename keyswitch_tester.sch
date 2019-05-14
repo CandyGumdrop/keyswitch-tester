@@ -1,0 +1,296 @@
+EESchema Schematic File Version 4
+LIBS:keyswitch_tester-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR01
+U 1 1 5CAB97FA
+P 5000 3300
+F 0 "#PWR01" H 5000 3150 50  0001 C CNN
+F 1 "+5V" H 5015 3473 50  0000 C CNN
+F 2 "" H 5000 3300 50  0001 C CNN
+F 3 "" H 5000 3300 50  0001 C CNN
+	1    5000 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3500 5150 3500
+Wire Wire Line
+	5000 3900 5150 3900
+Wire Wire Line
+	5000 4300 5150 4300
+Wire Wire Line
+	5000 4300 5000 4700
+Wire Wire Line
+	5000 4700 5150 4700
+Connection ~ 5000 4300
+Connection ~ 5000 3900
+Wire Wire Line
+	5000 3900 5000 4300
+Connection ~ 5000 3500
+Wire Wire Line
+	5000 3500 5000 3900
+Wire Wire Line
+	5000 3300 5000 3500
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5CAC509F
+P 5350 4700
+F 0 "SW4" H 5350 4985 50  0000 C CNN
+F 1 "SW_Push" H 5350 4894 50  0000 C CNN
+F 2 "Keyswitches_fancy:Kailh_socket" H 5350 4900 50  0001 C CNN
+F 3 "~" H 5350 4900 50  0001 C CNN
+	1    5350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5CABFB66
+P 5350 4300
+F 0 "SW3" H 5350 4585 50  0000 C CNN
+F 1 "SW_Push" H 5350 4494 50  0000 C CNN
+F 2 "Keyswitches_fancy:Kailh_socket" H 5350 4500 50  0001 C CNN
+F 3 "~" H 5350 4500 50  0001 C CNN
+	1    5350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5CABEC7A
+P 5350 3900
+F 0 "SW2" H 5350 4185 50  0000 C CNN
+F 1 "SW_Push" H 5350 4094 50  0000 C CNN
+F 2 "Keyswitches_fancy:Kailh_socket" H 5350 4100 50  0001 C CNN
+F 3 "~" H 5350 4100 50  0001 C CNN
+	1    5350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5CABA87E
+P 5350 3500
+F 0 "SW1" H 5350 3785 50  0000 C CNN
+F 1 "SW_Push" H 5350 3694 50  0000 C CNN
+F 2 "Keyswitches_fancy:Kailh_socket" H 5350 3700 50  0001 C CNN
+F 3 "~" H 5350 3700 50  0001 C CNN
+	1    5350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5CADCC3C
+P 5700 3500
+F 0 "R1" V 5493 3500 50  0000 C CNN
+F 1 "330" V 5584 3500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5630 3500 50  0001 C CNN
+F 3 "~" H 5700 3500 50  0001 C CNN
+	1    5700 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5CADF035
+P 5700 3900
+F 0 "R2" V 5493 3900 50  0000 C CNN
+F 1 "330" V 5584 3900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5630 3900 50  0001 C CNN
+F 3 "~" H 5700 3900 50  0001 C CNN
+	1    5700 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5CADF5EF
+P 5700 4300
+F 0 "R3" V 5493 4300 50  0000 C CNN
+F 1 "330" V 5584 4300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5630 4300 50  0001 C CNN
+F 3 "~" H 5700 4300 50  0001 C CNN
+	1    5700 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5CADFAA8
+P 5700 4700
+F 0 "R4" V 5493 4700 50  0000 C CNN
+F 1 "330" V 5584 4700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5630 4700 50  0001 C CNN
+F 3 "~" H 5700 4700 50  0001 C CNN
+	1    5700 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CAE0347
+P 6000 3500
+F 0 "D1" H 5993 3245 50  0000 C CNN
+F 1 "LED" H 5993 3336 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 6000 3500 50  0001 C CNN
+F 3 "~" H 6000 3500 50  0001 C CNN
+	1    6000 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5CAE0FFC
+P 6000 3900
+F 0 "D2" H 5993 3645 50  0000 C CNN
+F 1 "LED" H 5993 3736 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 6000 3900 50  0001 C CNN
+F 3 "~" H 6000 3900 50  0001 C CNN
+	1    6000 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5CAE177D
+P 6000 4300
+F 0 "D3" H 5993 4045 50  0000 C CNN
+F 1 "LED" H 5993 4136 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 6000 4300 50  0001 C CNN
+F 3 "~" H 6000 4300 50  0001 C CNN
+	1    6000 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5CAE1D19
+P 6000 4700
+F 0 "D4" H 5993 4445 50  0000 C CNN
+F 1 "LED" H 5993 4536 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 6000 4700 50  0001 C CNN
+F 3 "~" H 6000 4700 50  0001 C CNN
+	1    6000 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5CAE2402
+P 6350 4850
+F 0 "#PWR02" H 6350 4600 50  0001 C CNN
+F 1 "GND" H 6355 4677 50  0000 C CNN
+F 2 "" H 6350 4850 50  0001 C CNN
+F 3 "" H 6350 4850 50  0001 C CNN
+	1    6350 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4700 6350 4700
+Wire Wire Line
+	6350 4700 6350 4850
+Wire Wire Line
+	6150 4300 6350 4300
+Wire Wire Line
+	6350 4300 6350 4700
+Connection ~ 6350 4700
+Wire Wire Line
+	6150 3900 6350 3900
+Wire Wire Line
+	6350 3900 6350 4300
+Connection ~ 6350 4300
+Wire Wire Line
+	6350 3900 6350 3500
+Wire Wire Line
+	6350 3500 6150 3500
+Connection ~ 6350 3900
+$Comp
+L power:+5V #PWR04
+U 1 1 5CAE49E4
+P 7300 3500
+F 0 "#PWR04" H 7300 3350 50  0001 C CNN
+F 1 "+5V" H 7315 3673 50  0000 C CNN
+F 2 "" H 7300 3500 50  0001 C CNN
+F 3 "" H 7300 3500 50  0001 C CNN
+	1    7300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5CAE5D24
+P 6800 3650
+F 0 "J1" H 6908 3831 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 6908 3740 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 3650 50  0001 C CNN
+F 3 "~" H 6800 3650 50  0001 C CNN
+	1    6800 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3500 7300 3650
+Wire Wire Line
+	7300 3650 7000 3650
+$Comp
+L power:GND #PWR05
+U 1 1 5CAE91BF
+P 7300 3850
+F 0 "#PWR05" H 7300 3600 50  0001 C CNN
+F 1 "GND" H 7305 3677 50  0000 C CNN
+F 2 "" H 7300 3850 50  0001 C CNN
+F 3 "" H 7300 3850 50  0001 C CNN
+	1    7300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3850 7300 3750
+Wire Wire Line
+	7300 3750 7000 3750
+$Comp
+L power:+5V #PWR06
+U 1 1 5CAF295A
+P 7650 4450
+F 0 "#PWR06" H 7650 4300 50  0001 C CNN
+F 1 "+5V" H 7665 4623 50  0000 C CNN
+F 2 "" H 7650 4450 50  0001 C CNN
+F 3 "" H 7650 4450 50  0001 C CNN
+	1    7650 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4450 7650 4550
+Wire Wire Line
+	7650 4550 7450 4550
+NoConn ~ 7450 4750
+NoConn ~ 7450 4850
+NoConn ~ 7450 4950
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 5CAEABDA
+P 7150 4750
+F 0 "J2" H 7207 5217 50  0000 C CNN
+F 1 "USB_B_Micro" H 7207 5126 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 7300 4700 50  0001 C CNN
+F 3 "~" H 7300 4700 50  0001 C CNN
+	1    7150 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5150 7150 5400
+Text Label 7050 5350 2    50   ~ 0
+Shield
+Wire Wire Line
+	7050 5150 7050 5350
+$Comp
+L power:GND #PWR03
+U 1 1 5CAEFE2D
+P 7150 5400
+F 0 "#PWR03" H 7150 5150 50  0001 C CNN
+F 1 "GND" H 7155 5227 50  0000 C CNN
+F 2 "" H 7150 5400 50  0001 C CNN
+F 3 "" H 7150 5400 50  0001 C CNN
+	1    7150 5400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
